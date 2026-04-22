@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>怀柔书画山小环线 + 桃花 / 追火车</title>
+  <style>
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --line: #dbe2ea;
+  --ink: #152033;
+  --muted: #5a6475;
+  --accent: #3658d4;
+  --accent-soft: #e9eeff;
+  --warm: #92400e;
+  --warm-soft: #fff7ed;
+  --green: #0f766e;
+  --green-soft: #e8fffb;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f8fafc 0%, #f3f4f8 100%);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+.page { max-width: 1120px; margin: 0 auto; padding: 28px 18px 52px; }
+.hero {
+  background: linear-gradient(135deg, #ffffff 0%, #eef3ff 100%);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 24px 26px;
+  box-shadow: 0 18px 45px rgba(20, 32, 51, 0.06);
+}
+h1 { margin: 0 0 10px; font-size: 31px; line-height: 1.2; }
+.subtitle { color: var(--muted); margin: 0; font-size: 16px; line-height: 1.7; }
+.badges { margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap; }
+.badge {
+  display: inline-block; padding: 6px 10px; border-radius: 999px; background: var(--accent-soft);
+  color: var(--accent); font-size: 13px; font-weight: 600;
+}
+.badge.warm { background: var(--warm-soft); color: var(--warm); }
+.badge.green { background: var(--green-soft); color: var(--green); }
+.grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 18px; margin-top: 18px; }
+.panel {
+  background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 22px;
+  box-shadow: 0 14px 34px rgba(20, 32, 51, 0.05);
+}
+.panel h2 { margin: 0 0 12px; font-size: 22px; }
+.panel h3 { margin: 18px 0 8px; font-size: 17px; }
+.summary, p, li { font-size: 15px; line-height: 1.8; }
+table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 16px; }
+th, td { border: 1px solid var(--line); padding: 11px 12px; vertical-align: top; }
+th { background: #f8fafc; text-align: left; font-size: 14px; }
+td { font-size: 14px; line-height: 1.7; }
+.small-table td:first-child, .small-table th:first-child { width: 150px; }
+.schedule-table td:nth-child(1) { width: 60px; text-align: center; }
+.schedule-table td:nth-child(3) { width: 96px; white-space: nowrap; }
+ul { margin: 8px 0 0; padding-left: 22px; }
+li { margin: 6px 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.gallery { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 14px; margin-top: 18px; }
+figure {
+  margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 20px; overflow: hidden;
+  box-shadow: 0 12px 28px rgba(20,32,51,.04);
+}
+figure img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: cover; background: #edf2f8; }
+figcaption { padding: 12px 14px; font-size: 13px; color: var(--muted); line-height: 1.7; }
+.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(295px, 1fr)); gap: 16px; margin-top: 20px; }
+.index-card {
+  display: block; overflow: hidden; border-radius: 22px; border: 1px solid var(--line); background: #fff; color: inherit;
+  box-shadow: 0 12px 28px rgba(20,32,51,.04);
+}
+.index-card img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; background: #edf2f8; }
+.index-card .inner { padding: 16px 16px 18px; }
+.index-card h3 { margin: 0 0 10px; font-size: 20px; }
+.index-meta { color: var(--muted); font-size: 14px; line-height: 1.7; }
+.note { margin-top: 10px; font-size: 13px; color: var(--muted); }
+@media (max-width: 900px) {
+  .grid, .gallery { grid-template-columns: 1fr; }
+  .page { padding: 18px 12px 36px; }
+  h1 { font-size: 26px; }
+}
+</style>
+</head>
+<body>
+  <div class="page">
+    <p class="note"><a href="../index.html">← 返回总览</a></p>
+    <section class="hero">
+      <h1>怀柔书画山小环线 + 桃花 / 追火车</h1>
+      <p class="subtitle">春季周末 · 轻徒步和景观记忆点结合的松弛一日线</p>
+      <div class="badges">
+        <span class="badge">北京·怀柔</span>
+        <span class="badge">桃花追火车</span>
+        <span class="badge">6.0h</span>
+        <span class="badge">47km</span>
+        <span class="badge">5.7km / 310m / 2.6h</span>
+        <span class="badge green">L4 可执行</span>
+        <span class="badge warm">五道口出发</span>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <figure>
+        <img src="http://image-sixfoot.oss.genghai.com/data/foooooot/html/media/upload/sketch/2026/04/11/1775894471572.png" alt="怀柔书画山小环线 + 桃花 / 追火车 轨迹示意图" loading="lazy" />
+        <figcaption>主线示意图来自 <a href="https://www.foooooot.com/trip/9939033/">六只脚 9939033</a>；定量核验可直接查看 <a href="https://www.foooooot.com/client2/trip/9939033/info/">info JSON</a> 和 <a href="https://www.foooooot.com/v4/api/trip/9939033/trackjson">trackjson</a>。</figcaption>
+      </figure>
+      <figure>
+        <img src="https://sns-webpic-qc.xhscdn.com/202604221014/92ab5b9dd58b309988cbd86c4329830c/spectrum/1040g0k031ufub8vuis005nfnchj09ejfh55ih50!nc_n_webp_prv_1" alt="怀柔书画山小环线 + 桃花 / 追火车 内容配图" loading="lazy" referrerpolicy="no-referrer" />
+        <figcaption>氛围图抓自 <a href="https://www.xiaohongshu.com/search_result?keyword=%E4%B9%A6%E7%94%BB%E5%B1%B1%20%E8%B5%8F%E8%8A%B1%20%E8%BF%BD%E7%81%AB%E8%BD%A6&type=51">小红书“书画山 赏花 追火车”搜索</a>；徒步内容也可交叉看 <a href="https://www.xiaohongshu.com/search_result?keyword=%E4%B9%A6%E7%94%BB%E5%B1%B1%205km%20%E4%BA%B2%E5%AD%90%20%E7%8E%AF%E7%A9%BF&type=51">小红书“书画山 5km 亲子 环穿”搜索</a>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>看图理解这条线</h2>
+      <div class="gallery">
+        <figure>
+          <img src="https://sns-webpic-qc.xhscdn.com/202604221406/7f3953b9967867f231ad42f3e48b6224/spectrum/1040g0k031ufub8vuis005nfnchj09ejfh55ih50!nc_n_webp_mw_1" alt="小红书帖子：书画山5km亲子环穿徒步｜赏花追火车" loading="lazy" referrerpolicy="no-referrer" />
+          <figcaption>小红书参考帖 1：<a href="https://www.xiaohongshu.com/search_result/69cf220b000000002202732d?xsec_token=ABknoHlu6gVcjB_QiBsuIT-DBcQ8zbVPma1OoqaRUe-Eo=&xsec_source=">🌸书画山5km亲子环穿徒步｜赏花追火车！</a>。最能解释这条线为什么适合亲子和春季轻松出行。</figcaption>
+        </figure>
+        <figure>
+          <img src="https://sns-webpic-qc.xhscdn.com/202604221406/5567fdaa4859241bd1a43febe12daeda/notes_pre_post/1040g3k031tsuu1gon8005o1r664g8340o0553jo!nc_n_webp_mw_1" alt="小红书帖子：春日限定花海，怀柔也有开往春天的火车" loading="lazy" referrerpolicy="no-referrer" />
+          <figcaption>小红书参考帖 2：<a href="https://www.xiaohongshu.com/search_result/69bbcc5c000000002301415f?xsec_token=ABIjJM9Z2nySx8YZ7Ty4fFpFNlsqAHkp45zE-MtHlkte8=&xsec_source=">春日限定花海，怀柔也有开往春天的火车</a>。把“桃花 + 火车机位”的第二层记忆点展示得更直观。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>行程卡</h2>
+        <table class="small-table"><thead><tr><th>字段</th><th>内容</th></tr></thead><tbody>
+          <tr><td>区域</td><td>北京·怀柔</td></tr>
+          <tr><td>主题</td><td>桃花追火车</td></tr>
+          <tr><td>总时长</td><td>6.0h</td></tr>
+          <tr><td>预估自驾</td><td>47km</td></tr>
+          <tr><td>徒步参数</td><td>5.7km / 310m / 2.6h</td></tr>
+          <tr><td>强度</td><td>轻度</td></tr>
+          <tr><td>适合</td><td>带娃 / 想轻松走走 / 想要照片和记忆点</td></tr>
+          <tr><td>一句话结论</td><td>路线本身不累，桃花和火车机位让它特别适合春天的松弛感周末。</td></tr>
+        </tbody></table>
+      </section>
+      <section class="panel">
+        <h2>路线摘要</h2>
+        <p class="summary">路线本身不累，桃花和火车机位让它特别适合春天的松弛感周末。</p>
+        <h3>🏞️ 目的地介绍</h3>
+        <p>🌸 书画山适合被理解成一条“轻徒步景观线”，而不是纯刷体能的山。<a href="https://www.foooooot.com/trip/9939033/">六只脚轨迹页</a>显示它大约 5.7km、累计爬升 310m，难度 easy，起终点也足够接近，很适合家庭或想松弛一点的人群。真正加分的是它的春季气质：桃花、山线转折和铁路视角放在一起，容易形成很强的季节记忆。</p>
+        <h3>✨ 活动介绍</h3>
+        <p>🚂 这条线的“休闲内容”不是去一个特定商家，而是路线自带的赏花和追火车氛围。你可以直接把<a href="https://www.xiaohongshu.com/search_result?keyword=%E4%B9%A6%E7%94%BB%E5%B1%B1%20%E8%B5%8F%E8%8A%B1%20%E8%BF%BD%E7%81%AB%E8%BD%A6&type=51">书画山赏花追火车</a>、<a href="https://www.xiaohongshu.com/search_result?keyword=%E6%80%80%E6%9F%94%20%E4%B9%A6%E7%94%BB%E5%B1%B1%20%E6%A1%83%E8%8A%B1&type=51">怀柔书画山桃花</a>当作内容证据。下山后若还想补一段轻休闲，再用<a href="https://www.dianping.com/search/keyword/2/0_%E6%80%80%E6%9F%94%20%E9%AB%98%E5%88%86%20%E9%A4%90%E5%8E%85">点评搜怀柔高分餐厅</a>或咖啡做收尾即可。</p>
+        <h3>🍽️ 点评补充说明</h3>
+        <p>这条线当前仍然是“景观型主线”，没有像大黑山 / 潭柘寺那样已经锁死一家商户做锚点，所以本页先不硬塞一个可能跑偏的餐厅。方法上更合适的是：把徒步和景观点先固定，再在返程或下山片区用点评补一家当天状态最好的高分餐厅 / 咖啡。这样不会让路线被单个商家绑死，也更符合这条线“轻松看花看火车”的气质。</p>
+      </section>
+    </div>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>推荐行程安排</h2>
+      <table class="schedule-table"><thead><tr><th>序号</th><th>活动</th><th>时长</th><th>备注</th></tr></thead><tbody><tr><td>1</td><td>五道口出发，自驾去书画山起点片区 🚗</td><td>1.5h</td><td>建议留一点机动给拍照和找机位</td></tr><tr><td>2</td><td>书画山小环线 5.7km / 310m 🌿</td><td>2.6h</td><td>主打轻徒步 + 山花 + 火车视角</td></tr><tr><td>3</td><td>赏桃花 / 找追火车机位 📷</td><td>0.8h</td><td>这是当天最有记忆点的休闲段</td></tr><tr><td>4</td><td>下山后轻用餐 / 咖啡 / 村落散步</td><td>1.1h</td><td>保持松弛，不要再加第二个重活动</td></tr></tbody></table>
+      <p class="note">补证入口已直接放在对应介绍段落里：徒步看六只脚，内容氛围看小红书，临出发校验商家再看点评 / 携程 / Bing。</p>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>为什么这个方案值得保留</h2>
+        <ul><li>六只脚数据说明它是一条明确可走、强度友好的轻徒步线。</li><li>桃花 + 火车机位不是硬拼出来的玩法，而是这条线路天然就有的第二层乐趣。</li><li>如果想要一条更适合带孩子或朋友轻松出门的路线，它比更硬核的山线稳定。</li></ul>
+      </section>
+      <section class="panel">
+        <h2>风险与临门一脚</h2>
+        <ul><li>花期和光线会显著影响“追火车 / 赏花”的惊艳感。</li><li>如果更在意餐饮目的地感，这条线不如大黑山那条强。</li></ul>
+        <p>如果需要再做一轮公开存在性补证，可以直接看 <a href="https://you.ctrip.com/globalsearch/?keyword=%E4%B9%A6%E7%94%BB%E5%B1%B1">携程搜索</a>、<a href="https://www.bing.com/search?q=%E6%80%80%E6%9F%94%20%E4%B9%A6%E7%94%BB%E5%B1%B1%20%E8%B5%8F%E8%8A%B1%20%E8%BF%BD%E7%81%AB%E8%BD%A6%20%E5%92%96%E5%95%A1">Bing 备用搜索</a>；若要确认餐饮/咖啡细节，再补开 <a href="https://www.dianping.com/search/keyword/2/0_%E6%80%80%E6%9F%94%20%E9%AB%98%E5%88%86%20%E9%A4%90%E5%8E%85">点评搜索</a> 即可。</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
