@@ -7,94 +7,59 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f8f5f0;
-      --paper: #ffffff;
-      --paper-soft: #fcfaf7;
-      --text: #211922;
-      --muted: #62625b;
-      --line: #e5e5e0;
-      --red: #e60023;
-      --red-soft: #ffe9ed;
-      --green-soft: #e8f3ec;
-      --green-text: #194e30;
-      --shadow: 0 10px 28px rgba(33, 25, 34, 0.07);
-      --shadow-soft: 0 6px 18px rgba(33, 25, 34, 0.05);
+      --bg: #f8f5f0; --paper: #ffffff; --paper-soft: #fcfaf7; --text: #211922; --muted: #62625b;
+      --line: #e5e5e0; --red: #e60023; --red-soft: #ffe9ed; --green-soft: #e8f3ec; --green-text: #194e30;
+      --shadow: 0 10px 28px rgba(33, 25, 34, 0.07); --shadow-soft: 0 6px 18px rgba(33, 25, 34, 0.05);
     }
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(255,240,242,.8), rgba(255,240,242,0) 24%),
-        radial-gradient(circle at top right, rgba(246,242,255,.85), rgba(246,242,255,0) 20%),
-        linear-gradient(180deg, #fcfaf7 0%, #f8f5f0 100%);
-    }
+    body { margin: 0; font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif; color: var(--text); background: radial-gradient(circle at top left, rgba(255,240,242,.8), rgba(255,240,242,0) 24%), radial-gradient(circle at top right, rgba(246,242,255,.85), rgba(246,242,255,0) 20%), linear-gradient(180deg, #fcfaf7 0%, #f8f5f0 100%); }
     a { color: inherit; text-decoration: none; }
     .page { max-width: 1540px; margin: 0 auto; padding: 16px 14px 42px; }
-    .hero {
-      background: rgba(255,255,255,.84);
-      border: 1px solid rgba(229,229,224,.95);
-      border-radius: 26px;
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(8px);
-      padding: 16px 18px 15px;
-    }
-    .hero-top { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: 8px; padding: 6px 11px; border-radius: 999px;
-      background: var(--red-soft); color: var(--red); font-size: 12px; font-weight: 800; letter-spacing: .02em;
-    }
-    .hero-pills { display: flex; flex-wrap: wrap; gap: 8px; }
-    .pill { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; background: #f2efe9; color: var(--muted); font-size: 12px; font-weight: 700; }
-    .pill.primary { background: var(--red-soft); color: var(--red); }
-    .pill.green { background: var(--green-soft); color: var(--green-text); }
+    .hero { background: rgba(255,255,255,.84); border: 1px solid rgba(229,229,224,.95); border-radius: 26px; box-shadow: var(--shadow); backdrop-filter: blur(8px); padding: 16px 18px 15px; }
+    .hero-top { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+    .eyebrow { display:inline-flex; align-items:center; gap:8px; padding:6px 11px; border-radius:999px; background:var(--red-soft); color:var(--red); font-size:12px; font-weight:800; letter-spacing:.02em; }
+    .hero-pills { display:flex; flex-wrap:wrap; gap:8px; }
+    .pill { display:inline-flex; align-items:center; padding:6px 10px; border-radius:999px; background:#f2efe9; color:var(--muted); font-size:12px; font-weight:700; }
+    .pill.primary { background:var(--red-soft); color:var(--red); }
+    .pill.green { background:var(--green-soft); color:var(--green-text); }
     h1 { margin: 12px 0 6px; font-size: clamp(30px, 4vw, 48px); line-height: 1.02; letter-spacing: -0.04em; }
-    .subtitle { margin: 0; max-width: 1120px; color: var(--muted); font-size: 15px; line-height: 1.72; }
-    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin: 18px 2px 12px; }
-    .section-head h2 { margin: 0; font-size: 26px; letter-spacing: -0.03em; }
-    .section-head p { margin: 0; max-width: 760px; color: var(--muted); font-size: 14px; line-height: 1.7; }
-    .masonry { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: start; }
-    .pin-card { width: 100%; margin: 0; }
-    .pin-link { display: block; background: var(--paper); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; box-shadow: var(--shadow-soft); transition: transform .15s ease, box-shadow .15s ease; }
-    .pin-link:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgba(33,25,34,.1); }
-    .pin-media-wrap { background: #f1ede6; }
-    .pin-media { width: 100%; display: block; height: auto; object-fit: contain; aspect-ratio: auto; }
-    .pin-body { padding: 14px 14px 16px; }
-    .pin-topline { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-    .fresh-chip, .meta-chip { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; font-size: 12px; font-weight: 800; }
-    .fresh-chip.fresh { background: var(--red-soft); color: var(--red); }
-    .fresh-chip.archive { background: #f2efe9; color: #8a837b; }
-    .meta-chip { background: #f6f3ed; color: var(--muted); }
-    .pin-body h2 { margin: 10px 0 7px; font-size: 22px; line-height: 1.18; letter-spacing: -0.03em; }
-    .lede { margin: 0; color: var(--text); font-size: 14px; line-height: 1.7; }
-    .metric-row { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 11px; }
-    .metric-row span { background: #fbf8f3; border: 1px solid var(--line); border-radius: 999px; padding: 6px 9px; color: var(--muted); font-size: 12px; font-weight: 700; }
-    .mini-block { margin-top: 12px; padding-top: 12px; border-top: 1px solid #f0ede8; }
-    .mini-block strong { display: block; font-size: 13px; margin-bottom: 4px; }
-    .mini-block p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.72; }
-    .why { margin: 12px 0 0; color: #7a3946; font-size: 13px; line-height: 1.7; background: #fff7f8; border-radius: 16px; padding: 10px 11px; }
-    .usage-section { margin-top: 18px; display: grid; grid-template-columns: 1.05fr .95fr; gap: 14px; }
-    .usage-card { background: rgba(255,255,255,.86); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow-soft); padding: 16px; }
-    .usage-card h2 { margin: 0 0 8px; font-size: 19px; }
-    .usage-card p, .usage-card li { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.72; }
-    .how-grid { display: grid; gap: 10px; margin-top: 10px; }
-    .how-item { display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; }
-    .how-no { width: 28px; height: 28px; border-radius: 50%; background: var(--paper-soft); border: 1px solid var(--line); display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; }
-    .prompt-list { display: grid; gap: 8px; margin-top: 10px; }
-    .prompt { background: var(--paper-soft); border: 1px solid var(--line); border-radius: 18px; padding: 10px 12px; }
-    .prompt strong { display: block; font-size: 13px; margin-bottom: 2px; }
-    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; background: #f4f1eb; border-radius: 8px; padding: 2px 6px; }
-    @media (max-width: 1320px) { .page { max-width: 1320px; } }
-    @media (max-width: 1100px) { .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); } .usage-section { grid-template-columns: 1fr; } }
-    @media (max-width: 760px) {
-      .page { padding: 12px 10px 30px; }
-      .hero { padding: 14px 14px 13px; border-radius: 22px; }
-      .masonry { grid-template-columns: 1fr; }
-      .section-head { display: block; }
-      .section-head p { margin-top: 6px; }
-      .pin-body h2 { font-size: 20px; }
-    }
+    .subtitle { margin:0; max-width:1120px; color:var(--muted); font-size:15px; line-height:1.72; }
+    .section-head { display:flex; align-items:end; justify-content:space-between; gap:16px; margin:18px 2px 12px; }
+    .section-head h2 { margin:0; font-size:26px; letter-spacing:-0.03em; }
+    .section-head p { margin:0; max-width:760px; color:var(--muted); font-size:14px; line-height:1.7; }
+    .masonry { display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:16px; align-items:start; }
+    .pin-card { width:100%; margin:0; }
+    .pin-link { display:block; background:var(--paper); border:1px solid var(--line); border-radius:22px; overflow:hidden; box-shadow:var(--shadow-soft); transition:transform .15s ease, box-shadow .15s ease; }
+    .pin-link:hover { transform:translateY(-2px); box-shadow:0 14px 34px rgba(33,25,34,.1); }
+    .pin-media-wrap { background:#f1ede6; }
+    .pin-media { width:100%; display:block; height:auto; object-fit:contain; aspect-ratio:auto; }
+    .pin-body { padding:14px 14px 16px; }
+    .pin-topline { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+    .fresh-chip, .meta-chip { display:inline-flex; align-items:center; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:800; }
+    .fresh-chip.fresh { background:var(--red-soft); color:var(--red); }
+    .fresh-chip.archive { background:#f2efe9; color:#8a837b; }
+    .meta-chip { background:#f6f3ed; color:var(--muted); }
+    .pin-body h2 { margin:10px 0 7px; font-size:22px; line-height:1.18; letter-spacing:-0.03em; }
+    .lede { margin:0; color:var(--text); font-size:14px; line-height:1.7; min-height:48px; }
+    .metric-row { display:flex; flex-wrap:wrap; gap:7px; margin-top:11px; min-height:42px; align-content:flex-start; }
+    .metric-row span { background:#fbf8f3; border:1px solid var(--line); border-radius:999px; padding:6px 9px; color:var(--muted); font-size:12px; font-weight:700; }
+    .mini-block { margin-top:12px; padding-top:12px; border-top:1px solid #f0ede8; min-height:72px; }
+    .mini-block strong { display:block; font-size:13px; margin-bottom:4px; }
+    .mini-block p { margin:0; color:var(--muted); font-size:14px; line-height:1.72; }
+    .why { margin:12px 0 0; color:#7a3946; font-size:13px; line-height:1.7; background:#fff7f8; border-radius:16px; padding:10px 11px; min-height:64px; }
+    .usage-section { margin-top:18px; display:grid; grid-template-columns:1.05fr .95fr; gap:14px; }
+    .usage-card { background: rgba(255,255,255,.86); border: 1px solid var(--line); border-radius:24px; box-shadow:var(--shadow-soft); padding:16px; }
+    .usage-card h2 { margin:0 0 8px; font-size:19px; }
+    .usage-card p, .usage-card li { margin:0; color:var(--muted); font-size:14px; line-height:1.72; }
+    .how-grid { display:grid; gap:10px; margin-top:10px; }
+    .how-item { display:grid; grid-template-columns:28px 1fr; gap:10px; align-items:start; }
+    .how-no { width:28px; height:28px; border-radius:50%; background:var(--paper-soft); border:1px solid var(--line); display:inline-flex; align-items:center; justify-content:center; font-size:13px; font-weight:800; }
+    .prompt-list { display:grid; gap:8px; margin-top:10px; }
+    .prompt { background:var(--paper-soft); border:1px solid var(--line); border-radius:18px; padding:10px 12px; }
+    .prompt strong { display:block; font-size:13px; margin-bottom:2px; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; background:#f4f1eb; border-radius:8px; padding:2px 6px; }
+    @media (max-width: 1100px) { .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); } .usage-section { grid-template-columns:1fr; } }
+    @media (max-width: 760px) { .page { padding:12px 10px 30px; } .hero { padding:14px 14px 13px; border-radius:22px; } .masonry { grid-template-columns:1fr; } .section-head { display:block; } .section-head p { margin-top:6px; } .pin-body h2 { font-size:20px; } }
   </style>
 </head>
 <body>
@@ -103,26 +68,83 @@
       <div class="hero-top">
         <span class="eyebrow">vibe-tour skill · 从“说感觉”到“能出发”</span>
         <div class="hero-pills">
-          <span class="pill primary">本周精修在前</span>
-          <span class="pill">三列瀑布流</span>
+          <span class="pill primary">本次新增 3 条</span>
+          <span class="pill">桌面端三列</span>
           <span class="pill">index + /pages</span>
           <span class="pill green">五道口出发</span>
           <span class="pill green">六只脚优先</span>
         </div>
       </div>
       <h1>北京 weekend trips</h1>
-      <p class="subtitle">先看图和 vibe，再点进路线页看六只脚定量、点评信息卡、小红书帖子和行程安排。首页现在优先让内容先出现：头部更紧凑，详细使用说明放到页面后面。</p>
+      <p class="subtitle">现在已经从 3 条扩展到 6 条：新增了白虎涧、凤凰岭、蟒山三条，保留原来的大黑山、潭柘寺、书画山。首页先看图和 vibe，再点进路线页看六只脚定量、公开点评 / 携程 / Bing 补证和行程安排。</p>
     </section>
 
     <div class="section-head">
       <div>
         <h2>路线瀑布流</h2>
-        <p>桌面端固定优先按三列浏览。最近精修的卡片在前，较早版本放后面；图片尽量保留原比例，减少过度裁切。</p>
+        <p>新增路线默认放在最前面；每张卡都压缩成接近的摘要节奏，尽量减少三列浏览时的高度参差。图片继续优先保主体，不强行裁成同一海报比例。</p>
       </div>
     </div>
 
     <section class="masonry">
       
+      <article class="pin-card fresh">
+        <a class="pin-link" href="./pages/春季-昌平-6.5h-39km-白虎涧后院咖啡-7.4km412m.html">
+          <div class="pin-media-wrap">
+            <img class="pin-media" src="https://sns-webpic-qc.xhscdn.com/202604221720/0ed90e591643a49e613e20a333252fcb/notes_pre_post/1040g3k831s5718gclk0g49468pa18tinve68clo!nc_n_webp_mw_1" alt="白虎涧 + 后院咖啡" loading="lazy" referrerpolicy="no-referrer" />
+          </div>
+          <div class="pin-body">
+            <div class="pin-topline">
+              <span class="fresh-chip fresh">本次新增</span>
+              <span class="meta-chip">北京·昌平</span>
+            </div>
+            <h2>白虎涧 + 后院咖啡</h2>
+            <p class="lede">更偏野趣沟谷感的一条，走完山以后还能在村口庭院咖啡慢慢坐。</p>
+            <div class="metric-row"><span>6.5h</span><span>39km</span><span>7.4km / 412m / 3.4h</span><span>轻中度</span></div>
+            <div class="mini-block"><strong>主题</strong><p>白虎涧后院咖啡</p></div>
+            <div class="mini-block"><strong>平台快照</strong><p>六只脚 7.4km / 412m；点评公开结果可补白虎涧交通与后院锚点。</p></div>
+            <p class="why">适合作为“认真走一点，但不想把一天全压在山上”的新选择。</p>
+          </div>
+        </a>
+      </article>
+      <article class="pin-card fresh">
+        <a class="pin-link" href="./pages/春季-海淀-7.0h-29km-凤凰岭素虎收尾-7.1km684m.html">
+          <div class="pin-media-wrap">
+            <img class="pin-media" src="https://sns-webpic-qc.xhscdn.com/202604221720/b8f4ab28e2b285ae2111b6b85da946c9/notes_pre_post/1040g3k031lh3otmi5e5g5p8s3pioshmk3rvogr8!nc_n_webp_mw_1" alt="凤凰岭 + 素虎 / 山脚恢复" loading="lazy" referrerpolicy="no-referrer" />
+          </div>
+          <div class="pin-body">
+            <div class="pin-topline">
+              <span class="fresh-chip fresh">本次新增</span>
+              <span class="meta-chip">北京·海淀</span>
+            </div>
+            <h2>凤凰岭 + 素虎 / 山脚恢复</h2>
+            <p class="lede">离城近但真有爬升感，适合上午认真走山，下午用素食 / 咖啡慢慢恢复。</p>
+            <div class="metric-row"><span>7.0h</span><span>29km</span><span>7.1km / 684m / 3.6h</span><span>中等偏上</span></div>
+            <div class="mini-block"><strong>主题</strong><p>凤凰岭素虎收尾</p></div>
+            <div class="mini-block"><strong>平台快照</strong><p>六只脚 7.1km / 684m；Bing 可见大众点评攻略和素虎照片页入口。</p></div>
+            <p class="why">补齐海淀方向的“近、稳、真上山”路线。</p>
+          </div>
+        </a>
+      </article>
+      <article class="pin-card fresh">
+        <a class="pin-link" href="./pages/春季-昌平-5.0h-44km-蟒山水库观景-5.5km137m.html">
+          <div class="pin-media-wrap">
+            <img class="pin-media" src="https://sns-webpic-qc.xhscdn.com/202604221720/516167e955e5f0d813b451fccc89ae40/1040g00831u0od0oh7e6g5nu4mj40bgi9l4alca0!nc_n_webp_mw_1" alt="蟒山 + 十三陵水库观景" loading="lazy" referrerpolicy="no-referrer" />
+          </div>
+          <div class="pin-body">
+            <div class="pin-topline">
+              <span class="fresh-chip fresh">本次新增</span>
+              <span class="meta-chip">北京·昌平</span>
+            </div>
+            <h2>蟒山 + 十三陵水库观景</h2>
+            <p class="lede">最轻松的一条新增线，适合恢复日、亲友同行或临时起意也能走。</p>
+            <div class="metric-row"><span>5.0h</span><span>44km</span><span>5.5km / 137m / 2.0h</span><span>轻度</span></div>
+            <div class="mini-block"><strong>主题</strong><p>蟒山水库观景</p></div>
+            <div class="mini-block"><strong>平台快照</strong><p>六只脚 5.5km / 137m；点评公开结果强调适合带娃和看十三陵水库。</p></div>
+            <p class="why">把现在站点里缺少的“低压力恢复线”补上了。</p>
+          </div>
+        </a>
+      </article>
       <article class="pin-card fresh">
         <a class="pin-link" href="./pages/春季-昌平-6.5h-57km-山野烤房咖啡-6.9km425m.html">
           <div class="pin-media-wrap">
@@ -135,19 +157,13 @@
             </div>
             <h2>昌平大黑山环线 + 黑山烤房 / 山脚咖啡</h2>
             <p class="lede">最均衡的一条：山线成熟，午餐和咖啡收尾都很自然。</p>
-            <div class="metric-row">
-              <span>6.5h</span>
-              <span>57km</span>
-              <span>6.9km / 425m / 2.2h</span>
-              <span>轻中度</span>
-            </div>
+            <div class="metric-row"><span>6.5h</span><span>57km</span><span>6.9km / 425m / 2.2h</span><span>轻中度</span></div>
             <div class="mini-block"><strong>主题</strong><p>山野烤房咖啡</p></div>
-            <div class="mini-block"><strong>点评快照</strong><p>黑山烤房 4.5 / 3867条；延寿咖啡 4.4 / 692条。</p></div>
+            <div class="mini-block"><strong>平台快照</strong><p>黑山烤房 4.5 / 3867条；延寿咖啡 4.4 / 692条。</p></div>
             <p class="why">第一次上手最稳，路线完整度最高。</p>
           </div>
         </a>
       </article>
-    
       <article class="pin-card fresh">
         <a class="pin-link" href="./pages/春季-门头沟-8.0h-37km-洞穴咖啡收尾-11.4km688m.html">
           <div class="pin-media-wrap">
@@ -159,20 +175,14 @@
               <span class="meta-chip">北京·门头沟</span>
             </div>
             <h2>潭柘寺天坑小环线 + 洞力场 / 阳光房咖啡</h2>
-            <p class="lede">认真走山的一天，最后用洞穴/山野咖啡把气氛拉满。</p>
-            <div class="metric-row">
-              <span>8.0h</span>
-              <span>37km</span>
-              <span>11.4km / 688m / 5.2h</span>
-              <span>中等偏上</span>
-            </div>
+            <p class="lede">认真走山的一天，最后用洞穴 / 山野咖啡把气氛拉满。</p>
+            <div class="metric-row"><span>8.0h</span><span>37km</span><span>11.4km / 688m / 5.2h</span><span>中等偏上</span></div>
             <div class="mini-block"><strong>主题</strong><p>洞穴咖啡收尾</p></div>
-            <div class="mini-block"><strong>点评快照</strong><p>gaga 4.6 / 284条；墨托 4.2 / 4956条。</p></div>
+            <div class="mini-block"><strong>平台快照</strong><p>gaga 4.6 / 284条；墨托 4.2 / 4956条。</p></div>
             <p class="why">最有“运动 + 精致恢复”反差感。</p>
           </div>
         </a>
       </article>
-    
       <article class="pin-card archive">
         <a class="pin-link" href="./pages/春季-怀柔-6.0h-47km-桃花追火车-5.7km310m.html">
           <div class="pin-media-wrap">
@@ -185,19 +195,13 @@
             </div>
             <h2>怀柔书画山小环线 + 桃花 / 追火车</h2>
             <p class="lede">更偏春天气质和景观记忆点，轻松、好拍、适合慢一点。</p>
-            <div class="metric-row">
-              <span>6.0h</span>
-              <span>47km</span>
-              <span>5.7km / 310m / 2.6h</span>
-              <span>轻中度</span>
-            </div>
+            <div class="metric-row"><span>6.0h</span><span>47km</span><span>5.7km / 310m / 2.6h</span><span>轻中度</span></div>
             <div class="mini-block"><strong>主题</strong><p>桃花追火车</p></div>
-            <div class="mini-block"><strong>点评快照</strong><p>当前不强绑固定商户，更适合按当天状态加餐。</p></div>
+            <div class="mini-block"><strong>平台快照</strong><p>当前不强绑固定商户，更适合按当天状态加餐。</p></div>
             <p class="why">如果主要想要桃花和火车机位，这条最对味。</p>
           </div>
         </a>
       </article>
-    
     </section>
 
     <section class="usage-section">
@@ -206,7 +210,7 @@
         <div class="how-grid">
           <div class="how-item"><span class="how-no">1</span><div><p><strong>先说 vibe，不用先说地名。</strong> 例如“北京周边，轻徒步 + 咖啡 + 别太累的一日线”。</p></div></div>
           <div class="how-item"><span class="how-no">2</span><div><p><strong>我会先发散 query，再去找候选。</strong> 先从小红书看灵感，再用六只脚 / 点评 / 携程 / Bing 交叉验证。</p></div></div>
-          <div class="how-item"><span class="how-no">3</span><div><p><strong>最后收敛成能出发的路线。</strong> 默认会给你总时长、自驾 km、徒步参数、搭配商户和风险点。</p></div></div>
+          <div class="how-item"><span class="how-no">3</span><div><p><strong>最后收敛成能出发的路线。</strong> 默认会给你总时长、自驾 km、徒步参数、搭配商户 / 活动和风险点。</p></div></div>
         </div>
         <p style="margin-top:12px;">徒步类默认先查 <code>六只脚</code>；默认从 <code>五道口出发</code>，自驾优先环线，穿越线必须补接驳。</p>
       </div>
@@ -216,7 +220,7 @@
           <div class="prompt"><strong>最短说法</strong><p>帮我找本周末北京周边，轻徒步 + 咖啡 + 适合拍照的一日线。</p></div>
           <div class="prompt"><strong>带约束说法</strong><p>五道口出发，自驾优先，别太累，最好还能吃得不错。</p></div>
           <div class="prompt"><strong>加强验证</strong><p>优先六只脚成熟环线，再补点评高分餐厅 / 咖啡和小红书 vibe 图。</p></div>
-          <div class="prompt"><strong>继续迭代</strong><p>只保留本周精修路线，或者把某一条改成更适合亲子的版本。</p></div>
+          <div class="prompt"><strong>继续迭代</strong><p>每周三凌晨 1 点帮我再找 3 条新路线，只做 shortlist，不自动发布。</p></div>
         </div>
       </div>
     </section>

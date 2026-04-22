@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>凤凰岭 + 素虎 / 山脚恢复</title>
+  <style>
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --line: #dbe2ea;
+  --ink: #152033;
+  --muted: #5a6475;
+  --accent: #3658d4;
+  --accent-soft: #e9eeff;
+  --warm: #92400e;
+  --warm-soft: #fff7ed;
+  --green: #0f766e;
+  --green-soft: #e8fffb;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f8fafc 0%, #f3f4f8 100%);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+.page { max-width: 1120px; margin: 0 auto; padding: 28px 18px 52px; }
+.hero {
+  background: linear-gradient(135deg, #ffffff 0%, #eef3ff 100%);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 24px 26px;
+  box-shadow: 0 18px 45px rgba(20, 32, 51, 0.06);
+}
+h1 { margin: 0 0 10px; font-size: 31px; line-height: 1.2; }
+.subtitle { color: var(--muted); margin: 0; font-size: 16px; line-height: 1.7; }
+.badges { margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap; }
+.badge { display: inline-block; padding: 6px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 600; }
+.badge.warm { background: var(--warm-soft); color: var(--warm); }
+.badge.green { background: var(--green-soft); color: var(--green); }
+.grid { display: grid; grid-template-columns: 1.06fr 0.94fr; gap: 18px; margin-top: 18px; }
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 22px; box-shadow: 0 14px 34px rgba(20, 32, 51, 0.05); }
+.panel h2 { margin: 0 0 12px; font-size: 22px; }
+.panel h3 { margin: 18px 0 8px; font-size: 17px; }
+.summary, p, li { font-size: 15px; line-height: 1.8; }
+table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 16px; }
+th, td { border: 1px solid var(--line); padding: 11px 12px; vertical-align: top; }
+th { background: #f8fafc; text-align: left; font-size: 14px; }
+td { font-size: 14px; line-height: 1.7; }
+.small-table td:first-child, .small-table th:first-child { width: 150px; }
+.schedule-table td:nth-child(1) { width: 70px; text-align: center; }
+.schedule-table td:nth-child(3) { width: 96px; white-space: nowrap; }
+ul { margin: 8px 0 0; padding-left: 22px; }
+li { margin: 6px 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.masonry { column-count: 3; column-gap: 14px; margin-top: 18px; }
+.masonry figure { break-inside: avoid; display: inline-block; width: 100%; margin: 0 0 14px; }
+figure { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; box-shadow: 0 12px 28px rgba(20,32,51,.04); }
+figure img { width: 100%; height: auto; object-fit: contain; aspect-ratio: auto; display: block; background: #edf2f8; }
+figcaption { padding: 12px 14px; font-size: 13px; color: var(--muted); line-height: 1.7; }
+.note { margin-top: 10px; font-size: 13px; color: var(--muted); }
+.source-grid { display:grid; gap:14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.source-card { border:1px solid var(--line); border-radius:18px; padding:14px 15px; background:#fbfcff; }
+.source-card strong { display:block; margin-bottom:6px; }
+@media (max-width: 1100px) { .masonry { column-count: 2; } }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } .page { padding: 18px 12px 36px; } h1 { font-size: 26px; } }
+@media (max-width: 700px) { .masonry { column-count: 1; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <p class="note"><a href="../index.html">← 返回总览</a></p>
+    <section class="hero">
+      <h1>凤凰岭 + 素虎 / 山脚恢复</h1>
+      <p class="subtitle">春季周末 · 海淀西山更有爬升感的一天，收尾用素食 / 山脚轻恢复把节奏拉长</p>
+      <div class="badges">
+        <span class="badge">北京·海淀</span>
+        <span class="badge">凤凰岭素虎收尾</span>
+        <span class="badge">7.0h</span>
+        <span class="badge">29km</span>
+        <span class="badge">7.1km / 684m / 3.6h</span>
+        <span class="badge green">L4 可执行</span>
+        <span class="badge warm">五道口出发</span>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>封面速览</h2>
+      <div class="masonry">
+        <figure><img src="https://sns-webpic-qc.xhscdn.com/202604221720/b8f4ab28e2b285ae2111b6b85da946c9/notes_pre_post/1040g3k031lh3otmi5e5g5p8s3pioshmk3rvogr8!nc_n_webp_mw_1" alt="凤凰岭帖子图" loading="eager" referrerpolicy="no-referrer" /><figcaption>参考图 1：小红书“凤凰岭 素虎”搜索结果卡片。</figcaption></figure>
+<figure><img src="https://sns-webpic-qc.xhscdn.com/202604221720/10d1e36bbf7918fd9b21bf1291c906b4/1040g2sg31uph9hvg2sd05onprgl4ho9nobviq5g!nc_n_webp_mw_1" alt="凤凰岭山线 vibe" loading="eager" referrerpolicy="no-referrer" /><figcaption>参考图 2：能感受到这条线不是纯散步型，而是有一点真正山感。</figcaption></figure>
+<figure><img src="https://sns-webpic-qc.xhscdn.com/202604221720/22eea0d94ca7e4b18dcde77caa018a07/notes_pre_post/1040g3k031n8lubuqmm6g5pkmi5hgu7sp76qk9e0!nc_n_webp_mw_1" alt="凤凰岭收尾餐饮" loading="eager" referrerpolicy="no-referrer" /><figcaption>参考图 3：把“下山后去哪里收尾”这件事提前想好。</figcaption></figure>
+      </div>
+      <p class="note">图片优先用真实 session 下的小红书搜索结果卡片图做 vibe 层理解；徒步定量以六只脚页面为准，目的地公开信息以携程 / Bing / 点评公开结果补证。</p>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>行程卡</h2>
+        <table class="small-table"><thead><tr><th>字段</th><th>内容</th></tr></thead><tbody>
+          <tr><td>区域</td><td>北京·海淀</td></tr>
+          <tr><td>主题</td><td>凤凰岭素虎收尾</td></tr>
+          <tr><td>总时长</td><td>7.0h</td></tr>
+          <tr><td>预估自驾</td><td>29km</td></tr>
+          <tr><td>徒步参数</td><td>7.1km / 684m / 3.6h</td></tr>
+          <tr><td>强度</td><td>中等偏上</td></tr>
+          <tr><td>适合</td><td>想离城近一点但又想真上山 / 能接受更陡一点爬升 / 喜欢山下补一顿像样午餐的人</td></tr>
+          <tr><td>一句话结论</td><td>比阳台山和白虎涧都更“认真”一些，但离城仍近，是海淀线里很值得补齐的一张牌。</td></tr>
+        </tbody></table>
+      </section>
+      <section class="panel">
+        <h2>路线摘要</h2>
+        <p class="summary">凤凰岭是离城近、识别度高、公开资料丰富的一条线。它的山感和爬升都更明显，适合做“上午认真爬、下山好好吃”的海淀版方案。</p>
+        <h3>🏞️ 目的地介绍</h3>
+        <p>六只脚的 <a href="https://www.foooooot.com/trip/9923923/">trip 9923923</a> 可以直接读到 7.1km、累计上升 684m、历时 3h37m，说明它虽然不长，但爬升感是实打实的。Bing 搜索“凤凰岭 大众点评”能稳定看到景区攻略和公开攻略贴；携程公开景点页也把凤凰岭作为海淀经典景区长期维护。</p>
+        <h3>✨ 搭配内容</h3>
+        <p>小红书“<a href="https://www.xiaohongshu.com/search_result?keyword=%E5%87%A4%E5%87%B0%E5%B2%AD%20%E7%B4%A0%E8%99%8E&type=51">凤凰岭 素虎</a>”和“凤凰岭 咖啡”能看到山下吃饭 / 休息的稳定搭配。Bing 检索“素虎 凤凰岭 大众点评”还能直接看到大众点评的照片页结果，说明这家是一个比较明确的收尾锚点。</p>
+      </section>
+    </div>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>推荐行程安排</h2>
+      <table class="schedule-table"><thead><tr><th>#</th><th>安排</th><th>时长</th></tr></thead><tbody>
+        <tr><td>1</td><td>五道口出发，进海淀西山方向，去凤凰岭景区附近停车</td><td>0.8h</td></tr>
+<tr><td>2</td><td>凤凰岭徒步主线，控制节奏，不把它走成纯拉练</td><td>3.6h</td></tr>
+<tr><td>3</td><td>下山后在山脚做恢复型午餐 / 素食 / 咖啡收尾</td><td>1.2h</td></tr>
+<tr><td>4</td><td>返程，若不赶时间可在周边再坐一会儿</td><td>1.4h</td></tr>
+      </tbody></table>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>多源验证速记</h2>
+      <div class="source-grid">
+        <div class="source-card"><strong>六只脚</strong><p>成熟参考：<a href="https://www.foooooot.com/trip/9923923/">9923923</a>。页面可读到 7.1km、684m、3h37m，强度比白虎涧 / 蟒山更像“认真爬山”。</p></div>
+<div class="source-card"><strong>小红书</strong><p>搜索“凤凰岭 素虎 / 凤凰岭 咖啡”能看到山脚恢复型搭配，不只是景区打卡。</p></div>
+<div class="source-card"><strong>点评 / Bing</strong><p>Bing 结果能读到“大众点评 凤凰岭攻略”与“素虎素食（凤凰岭店）照片页”等公开入口，说明商户锚点不是空泛猜测。</p></div>
+<div class="source-card"><strong>携程</strong><p>凤凰岭是公开资料非常成熟的景区，适合补门票、位置、基础玩法与大众认知。</p></div>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>为什么保留这条</h2>
+      <ul>
+        <li>补齐了“海淀离城近，但仍然有真山感”的路线类型。</li>
+<li>能和现有门头沟线拉开差异：同样认真，但凤凰岭更近、更方便。</li>
+<li>商户收尾方向明确，不是只给一个景区名就结束。</li>
+      </ul>
+      <h3>临门一脚 / 风险提示</h3>
+      <ul>
+        <li>这条的爬升明显高于卡面字数给人的感觉，别把它当纯遛弯线。</li>
+<li>周末热门程度可能较高，建议早到或者避开正午扎堆时段。</li>
+<li>如果只想轻松晒太阳，这条不如蟒山和书画山。</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

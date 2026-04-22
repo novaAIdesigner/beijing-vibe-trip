@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>白虎涧 + 后院咖啡</title>
+  <style>
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --line: #dbe2ea;
+  --ink: #152033;
+  --muted: #5a6475;
+  --accent: #3658d4;
+  --accent-soft: #e9eeff;
+  --warm: #92400e;
+  --warm-soft: #fff7ed;
+  --green: #0f766e;
+  --green-soft: #e8fffb;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f8fafc 0%, #f3f4f8 100%);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+.page { max-width: 1120px; margin: 0 auto; padding: 28px 18px 52px; }
+.hero {
+  background: linear-gradient(135deg, #ffffff 0%, #eef3ff 100%);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 24px 26px;
+  box-shadow: 0 18px 45px rgba(20, 32, 51, 0.06);
+}
+h1 { margin: 0 0 10px; font-size: 31px; line-height: 1.2; }
+.subtitle { color: var(--muted); margin: 0; font-size: 16px; line-height: 1.7; }
+.badges { margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap; }
+.badge { display: inline-block; padding: 6px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 600; }
+.badge.warm { background: var(--warm-soft); color: var(--warm); }
+.badge.green { background: var(--green-soft); color: var(--green); }
+.grid { display: grid; grid-template-columns: 1.06fr 0.94fr; gap: 18px; margin-top: 18px; }
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 22px; box-shadow: 0 14px 34px rgba(20, 32, 51, 0.05); }
+.panel h2 { margin: 0 0 12px; font-size: 22px; }
+.panel h3 { margin: 18px 0 8px; font-size: 17px; }
+.summary, p, li { font-size: 15px; line-height: 1.8; }
+table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 16px; }
+th, td { border: 1px solid var(--line); padding: 11px 12px; vertical-align: top; }
+th { background: #f8fafc; text-align: left; font-size: 14px; }
+td { font-size: 14px; line-height: 1.7; }
+.small-table td:first-child, .small-table th:first-child { width: 150px; }
+.schedule-table td:nth-child(1) { width: 70px; text-align: center; }
+.schedule-table td:nth-child(3) { width: 96px; white-space: nowrap; }
+ul { margin: 8px 0 0; padding-left: 22px; }
+li { margin: 6px 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.masonry { column-count: 3; column-gap: 14px; margin-top: 18px; }
+.masonry figure { break-inside: avoid; display: inline-block; width: 100%; margin: 0 0 14px; }
+figure { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; box-shadow: 0 12px 28px rgba(20,32,51,.04); }
+figure img { width: 100%; height: auto; object-fit: contain; aspect-ratio: auto; display: block; background: #edf2f8; }
+figcaption { padding: 12px 14px; font-size: 13px; color: var(--muted); line-height: 1.7; }
+.note { margin-top: 10px; font-size: 13px; color: var(--muted); }
+.source-grid { display:grid; gap:14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.source-card { border:1px solid var(--line); border-radius:18px; padding:14px 15px; background:#fbfcff; }
+.source-card strong { display:block; margin-bottom:6px; }
+@media (max-width: 1100px) { .masonry { column-count: 2; } }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } .page { padding: 18px 12px 36px; } h1 { font-size: 26px; } }
+@media (max-width: 700px) { .masonry { column-count: 1; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <p class="note"><a href="../index.html">← 返回总览</a></p>
+    <section class="hero">
+      <h1>白虎涧 + 后院咖啡</h1>
+      <p class="subtitle">春季周末 · 先走北京后花园山线，再到山脚庭院咖啡放松的一日线</p>
+      <div class="badges">
+        <span class="badge">北京·昌平</span>
+        <span class="badge">白虎涧后院咖啡</span>
+        <span class="badge">6.5h</span>
+        <span class="badge">39km</span>
+        <span class="badge">7.4km / 412m / 3.4h</span>
+        <span class="badge green">L4 可执行</span>
+        <span class="badge warm">五道口出发</span>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>封面速览</h2>
+      <div class="masonry">
+        <figure><img src="https://sns-webpic-qc.xhscdn.com/202604221720/0ed90e591643a49e613e20a333252fcb/notes_pre_post/1040g3k831s5718gclk0g49468pa18tinve68clo!nc_n_webp_mw_1" alt="白虎涧+后院咖啡" loading="eager" referrerpolicy="no-referrer" /><figcaption>参考图 1：来自小红书“白虎涧 后院 咖啡”搜索结果，先看山脚庭院气质。</figcaption></figure>
+<figure><img src="https://sns-webpic-qc.xhscdn.com/202604221720/1e5a82b5b1865025c860ed171d23a20b/1040g00831s1vf215ko0g4bp1f7tsfit7sdmq4lo!nc_n_webp_mw_1" alt="白虎涧山脚咖啡" loading="eager" referrerpolicy="no-referrer" /><figcaption>参考图 2：同一搜索结果里的咖啡 / 民宿系内容，说明这条线适合徒步后收尾。</figcaption></figure>
+<figure><img src="https://sns-webpic-qc.xhscdn.com/202604221720/c12a86ed79bfe1150d9f0ad0e4e95cdd/notes_pre_post/1040g3k031nvn5pr06m6g49b2gkkat75ep1a679o!nc_n_webp_mw_1" alt="白虎涧周边帖子卡片" loading="eager" referrerpolicy="no-referrer" /><figcaption>参考图 3：作为路线 vibe 补证，不只是一条爬山线。</figcaption></figure>
+      </div>
+      <p class="note">图片优先用真实 session 下的小红书搜索结果卡片图做 vibe 层理解；徒步定量以六只脚页面为准，目的地公开信息以携程 / Bing / 点评公开结果补证。</p>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>行程卡</h2>
+        <table class="small-table"><thead><tr><th>字段</th><th>内容</th></tr></thead><tbody>
+          <tr><td>区域</td><td>北京·昌平</td></tr>
+          <tr><td>主题</td><td>白虎涧后院咖啡</td></tr>
+          <tr><td>总时长</td><td>6.5h</td></tr>
+          <tr><td>预估自驾</td><td>39km</td></tr>
+          <tr><td>徒步参数</td><td>7.4km / 412m / 3.4h</td></tr>
+          <tr><td>强度</td><td>轻中度</td></tr>
+          <tr><td>适合</td><td>想要一点野趣 / 想看沟谷和山势 / 想要下山后还能坐一会儿的人</td></tr>
+          <tr><td>一句话结论</td><td>它比普通公园更有山感，但整体又没到特别硬核，适合做“认真徒步 + 轻松收尾”的新版补充路线。</td></tr>
+        </tbody></table>
+      </section>
+      <section class="panel">
+        <h2>路线摘要</h2>
+        <p class="summary">这条线的优点是“野趣感”很足，但整体仍在可控区间。先去白虎涧把山线走完整，再回到后白虎涧村一带喝杯咖啡，节奏自然。</p>
+        <h3>🏞️ 目的地介绍</h3>
+        <p>白虎涧这条线在六只脚上能看到近期成熟轨迹，例如 <a href="https://www.foooooot.com/trip/9938839/">trip 9938839</a>：全长 7.4km、累计上升 412m、历时 3h24m，起终点都在北京昌平区，适合作为周末自驾版轻认真徒步。Bing 上的 <a href="https://you.ctrip.com/sight/beijing1/76268.html">携程景点页</a>和大众点评攻略结果也都把它描述为北京后花园 / 白虎涧风景区，公开存在性清晰。</p>
+        <h3>✨ 搭配内容</h3>
+        <p>小红书里“<a href="https://www.xiaohongshu.com/search_result?keyword=%E7%99%BD%E8%99%8E%E6%B6%A7%20%E5%92%96%E5%95%A1&type=51">白虎涧 咖啡</a>”“<a href="https://www.xiaohongshu.com/search_result?keyword=%E7%99%BD%E8%99%8E%E6%B6%A7%20%E5%90%8E%E9%99%A2%20%E5%92%96%E5%95%A1&type=51">白虎涧 后院 咖啡</a>”的结果比较稳定，能看到山脚庭院、宠物友好和村落慢节奏这些关键词。这里的拔草点不一定是最强餐饮，而是“走完山以后还能慢下来”的状态。</p>
+      </section>
+    </div>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>推荐行程安排</h2>
+      <table class="schedule-table"><thead><tr><th>#</th><th>安排</th><th>时长</th></tr></thead><tbody>
+        <tr><td>1</td><td>五道口出发，直接开去北京后花园（白虎涧）风景区附近停车</td><td>1.0h</td></tr>
+<tr><td>2</td><td>白虎涧徒步主线，控制在成熟环线节奏里</td><td>3.4h</td></tr>
+<tr><td>3</td><td>回到后白虎涧村周边，找庭院咖啡 / 轻食慢慢坐</td><td>1.0h</td></tr>
+<tr><td>4</td><td>返程，若状态好可顺手在村里再走一小圈</td><td>1.1h</td></tr>
+      </tbody></table>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>多源验证速记</h2>
+      <div class="source-grid">
+        <div class="source-card"><strong>六只脚</strong><p>近期可核验轨迹：<a href="https://www.foooooot.com/trip/9938839/">9938839</a>。页面可读到 7.4km、412m、3h24m、北京昌平区 → 北京昌平区、难度简单。</p></div>
+<div class="source-card"><strong>小红书</strong><p>“白虎涧 咖啡 / 白虎涧 后院 咖啡”能稳定看到山脚庭院、宠物友好、慢节奏收尾的内容方向。</p></div>
+<div class="source-card"><strong>点评 / Bing</strong><p>Bing 检索“大众点评 白虎涧”能读到景区攻略、交通和停车信息；同时能看到“后院·白虎涧”作为山脚慢生活锚点。</p></div>
+<div class="source-card"><strong>携程</strong><p>公开景点页可对齐“北京后花园（白虎涧）风景区”位置与基础信息，适合补目的地存在性。</p></div>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <h2>为什么保留这条</h2>
+      <ul>
+        <li>和现有大黑山相比，它更偏沟谷 / 景区式山线，风格不重复。</li>
+<li>和怀柔书画山相比，它更像“真徒步后回村里休息”的一整天。</li>
+<li>资料链路完整：六只脚、小红书、携程、点评公开结果都能形成闭环。</li>
+      </ul>
+      <h3>临门一脚 / 风险提示</h3>
+      <ul>
+        <li>景区型路线周末人流可能明显高于纯野线，适合早点到。</li>
+<li>山脚咖啡 / 民宿型商户节奏偏慢，别按高翻台餐厅预期去。</li>
+<li>如果你更想要绝对清静和“无人感”，这条不如书画山。</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
