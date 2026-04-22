@@ -146,11 +146,11 @@ figcaption { padding: 12px 14px; font-size: 13px; color: var(--muted); line-heig
       <h2>封面速览</h2>
       <div class="masonry">
                 <figure>
-          <img src="https://sns-webpic-qc.xhscdn.com/202604221406/4722a5827823d41031c4a34c9f3b2ec2/notes_pre_post/1040g3k831rv6j4fgis8g5q8pjhhdtkangmua4oo!nc_n_webp_mw_1" alt="小红书帖子：洞力场 洞穴咖啡放上桌了" loading="lazy" referrerpolicy="no-referrer" />
+          <img src="https://sns-webpic-qc.xhscdn.com/202604221406/4722a5827823d41031c4a34c9f3b2ec2/notes_pre_post/1040g3k831rv6j4fgis8g5q8pjhhdtkangmua4oo!nc_n_webp_mw_1" alt="小红书帖子：洞力场 洞穴咖啡放上桌了" loading="eager" decoding="async" width="750" height="750" referrerpolicy="no-referrer" />
           <figcaption>参考帖 1：<a href="https://www.xiaohongshu.com/search_result/697c6f25000000002202d2d6?xsec_token=AB66nXnR5GbXK2Cu4DwqsV0L7_93zKS67loUii664o_zc=&xsec_source=">洞力场｜洞穴咖啡放“上桌”了！</a>。先把气质拉满，再补结构化落地信息。</figcaption>
         </figure>
         <figure>
-          <img src="https://sns-webpic-qc.xhscdn.com/202604221406/7d19fda05b810fbeeb5c632e4930232a/notes_pre_post/1040g3k031pb5jpf22u6g5pcst2p83rjobh4btvo!nc_n_webp_mw_1" alt="小红书帖子：北京每周一山 潭柘寺天坑徒步攻略" loading="lazy" referrerpolicy="no-referrer" />
+          <img src="https://sns-webpic-qc.xhscdn.com/202604221406/7d19fda05b810fbeeb5c632e4930232a/notes_pre_post/1040g3k031pb5jpf22u6g5pcst2p83rjobh4btvo!nc_n_webp_mw_1" alt="小红书帖子：北京每周一山 潭柘寺天坑徒步攻略" loading="eager" decoding="async" width="750" height="750" referrerpolicy="no-referrer" />
           <figcaption>参考帖 2：<a href="https://www.xiaohongshu.com/search_result/6926614800000000190270a8?xsec_token=ABuhLYCsVvcrFcXqPiEgy5gsqyHx-DmSHHynAD4o0i6kM=&xsec_source=">【北京每周一山】潭柘寺天坑徒步攻略</a>。用于补“山线本体到底长什么样”。</figcaption>
         </figure>
       </div>
@@ -185,26 +185,34 @@ figcaption { padding: 12px 14px; font-size: 13px; color: var(--muted); line-heig
       <h2>点评信息（顺序平铺）</h2>
       <div class="space-y-8">
         <article>
-          <div class="flex flex-col gap-3 border-b border-[#efe6dc] pb-5 sm:flex-row sm:items-start sm:justify-between">
+          <div class="grid gap-5 border-b border-[#efe6dc] pb-6 md:grid-cols-[minmax(0,1fr)_260px] md:items-start">
             <div>
-              <h3 class="m-0 text-[24px] font-bold leading-tight text-[#2b2118]"><a class="text-inherit no-underline hover:underline" href="https://www.dianping.com/shop/k1XO6mj8gyI9nDQg">gaga(北京紫旸山野店)</a></h3>
-              <div class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-[#5f5348]">
-                <span class="inline-flex items-center gap-1 rounded-full bg-[#ffefe5] px-3 py-1 font-semibold text-[#f05a28]">★★★★★ 4.6</span>
-                <span>284条评价</span>
-                <span>¥111/人</span>
-                <span>潭柘寺西餐</span>
-              </div>
-              <div class="mt-3 flex flex-wrap gap-2 text-xs text-[#7a695a]">
-                <span class="rounded-full bg-[#fff3e8] px-3 py-1">口味 4.5</span>
-                <span class="rounded-full bg-[#fff3e8] px-3 py-1">环境 4.8</span>
-                <span class="rounded-full bg-[#fff3e8] px-3 py-1">服务 4.6</span>
-                <span class="rounded-full bg-[#f6f6f6] px-3 py-1">免费停车</span>
-                <span class="rounded-full bg-[#f6f6f6] px-3 py-1">有宝宝椅</span>
-                <span class="rounded-full bg-[#f6f6f6] px-3 py-1">有露台</span>
-                <span class="rounded-full bg-[#f6f6f6] px-3 py-1">山景餐厅</span>
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <h3 class="m-0 text-[24px] font-bold leading-tight text-[#2b2118]"><a class="text-inherit no-underline hover:underline" href="https://www.dianping.com/shop/k1XO6mj8gyI9nDQg">gaga(北京紫旸山野店)</a></h3>
+                  <div class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-[#5f5348]">
+                    <span class="inline-flex items-center gap-1 rounded-full bg-[#ffefe5] px-3 py-1 font-semibold text-[#f05a28]">★★★★★ 4.6</span>
+                    <span>284条评价</span>
+                    <span>¥111/人</span>
+                    <span>潭柘寺西餐</span>
+                  </div>
+                  <div class="mt-3 flex flex-wrap gap-2 text-xs text-[#7a695a]">
+                    <span class="rounded-full bg-[#fff3e8] px-3 py-1">口味 4.5</span>
+                    <span class="rounded-full bg-[#fff3e8] px-3 py-1">环境 4.8</span>
+                    <span class="rounded-full bg-[#fff3e8] px-3 py-1">服务 4.6</span>
+                    <span class="rounded-full bg-[#f6f6f6] px-3 py-1">免费停车</span>
+                    <span class="rounded-full bg-[#f6f6f6] px-3 py-1">有宝宝椅</span>
+                    <span class="rounded-full bg-[#f6f6f6] px-3 py-1">有露台</span>
+                    <span class="rounded-full bg-[#f6f6f6] px-3 py-1">山景餐厅</span>
+                  </div>
+                </div>
+                <a class="inline-flex shrink-0 items-center justify-center rounded-full border border-[#ffd3bc] bg-white px-4 py-2 text-sm font-semibold text-[#f05a28] no-underline shadow-sm hover:bg-[#fff7f2]" href="https://www.dianping.com/shop/k1XO6mj8gyI9nDQg">点评原页 ↗</a>
               </div>
             </div>
-            <a class="inline-flex shrink-0 items-center justify-center rounded-full border border-[#ffd3bc] bg-white px-4 py-2 text-sm font-semibold text-[#f05a28] no-underline shadow-sm hover:bg-[#fff7f2]" href="https://www.dianping.com/shop/k1XO6mj8gyI9nDQg">点评原页 ↗</a>
+            <figure class="overflow-hidden rounded-2xl border border-[#f1e5d8] bg-[#fffaf5] shadow-sm">
+              <img class="block h-full w-full object-cover" src="../assets/dianping/gaga-ziyang.webp" alt="gaga 北京紫旸山野店 商户主图" loading="eager" decoding="async" width="750" height="750" referrerpolicy="no-referrer" />
+              <figcaption class="px-3 py-2 text-xs text-[#7a695a]">点评商户主图：gaga(北京紫旸山野店)</figcaption>
+            </figure>
           </div>
           <dl class="mt-5 grid gap-x-6 gap-y-3 text-[15px] leading-7 md:grid-cols-[120px,1fr]">
             <dt class="font-semibold text-[#8b5c36]">点评榜单</dt><dd>门头沟区西餐热门榜 · 第2名</dd>
@@ -219,26 +227,34 @@ figcaption { padding: 12px 14px; font-size: 13px; color: var(--muted); line-heig
         </article>
 
         <article class="border-t border-[#e8ecef] pt-8">
-          <div class="flex flex-col gap-3 border-b border-[#dfe8ec] pb-5 sm:flex-row sm:items-start sm:justify-between">
+          <div class="grid gap-5 border-b border-[#dfe8ec] pb-6 md:grid-cols-[minmax(0,1fr)_260px] md:items-start">
             <div>
-              <h3 class="m-0 text-[24px] font-bold leading-tight text-[#1f2b33]"><a class="text-inherit no-underline hover:underline" href="https://www.dianping.com/shop/G2cF2C7WdsOdWD4x">墨托咖啡&柴窑披萨(潭柘寺店)</a></h3>
-              <div class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-[#5e6c76]">
-                <span class="inline-flex items-center gap-1 rounded-full bg-[#edf6fb] px-3 py-1 font-semibold text-[#2e7ca7]">★★★★★ 4.2</span>
-                <span>4956条评价</span>
-                <span>¥93/人</span>
-                <span>门头沟区咖啡</span>
-              </div>
-              <div class="mt-3 flex flex-wrap gap-2 text-xs text-[#61707a]">
-                <span class="rounded-full bg-[#edf6fb] px-3 py-1">口味 4.2</span>
-                <span class="rounded-full bg-[#edf6fb] px-3 py-1">环境 4.3</span>
-                <span class="rounded-full bg-[#edf6fb] px-3 py-1">服务 4.2</span>
-                <span class="rounded-full bg-[#f6f6f6] px-3 py-1">有宝宝椅</span>
-                <span class="rounded-full bg-[#f6f6f6] px-3 py-1">可带宠物</span>
-                <span class="rounded-full bg-[#f6f6f6] px-3 py-1">有露台</span>
-                <span class="rounded-full bg-[#f6f6f6] px-3 py-1">适合自驾</span>
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <h3 class="m-0 text-[24px] font-bold leading-tight text-[#1f2b33]"><a class="text-inherit no-underline hover:underline" href="https://www.dianping.com/shop/G2cF2C7WdsOdWD4x">墨托咖啡&柴窑披萨(潭柘寺店)</a></h3>
+                  <div class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-[#5e6c76]">
+                    <span class="inline-flex items-center gap-1 rounded-full bg-[#edf6fb] px-3 py-1 font-semibold text-[#2e7ca7]">★★★★★ 4.2</span>
+                    <span>4956条评价</span>
+                    <span>¥93/人</span>
+                    <span>门头沟区咖啡</span>
+                  </div>
+                  <div class="mt-3 flex flex-wrap gap-2 text-xs text-[#61707a]">
+                    <span class="rounded-full bg-[#edf6fb] px-3 py-1">口味 4.2</span>
+                    <span class="rounded-full bg-[#edf6fb] px-3 py-1">环境 4.3</span>
+                    <span class="rounded-full bg-[#edf6fb] px-3 py-1">服务 4.2</span>
+                    <span class="rounded-full bg-[#f6f6f6] px-3 py-1">有宝宝椅</span>
+                    <span class="rounded-full bg-[#f6f6f6] px-3 py-1">可带宠物</span>
+                    <span class="rounded-full bg-[#f6f6f6] px-3 py-1">有露台</span>
+                    <span class="rounded-full bg-[#f6f6f6] px-3 py-1">适合自驾</span>
+                  </div>
+                </div>
+                <a class="inline-flex shrink-0 items-center justify-center rounded-full border border-[#cae2ee] bg-white px-4 py-2 text-sm font-semibold text-[#2e7ca7] no-underline shadow-sm hover:bg-[#f6fbfe]" href="https://www.dianping.com/shop/G2cF2C7WdsOdWD4x">点评原页 ↗</a>
               </div>
             </div>
-            <a class="inline-flex shrink-0 items-center justify-center rounded-full border border-[#cae2ee] bg-white px-4 py-2 text-sm font-semibold text-[#2e7ca7] no-underline shadow-sm hover:bg-[#f6fbfe]" href="https://www.dianping.com/shop/G2cF2C7WdsOdWD4x">点评原页 ↗</a>
+            <figure class="overflow-hidden rounded-2xl border border-[#dce8ef] bg-[#fbfdff] shadow-sm">
+              <img class="block h-full w-full object-cover" src="../assets/dianping/moto-tanzhesi.webp" alt="墨托咖啡&柴窑披萨 商户主图" loading="eager" decoding="async" width="750" height="750" referrerpolicy="no-referrer" />
+              <figcaption class="px-3 py-2 text-xs text-[#61707a]">点评商户主图：墨托咖啡&柴窑披萨(潭柘寺店)</figcaption>
+            </figure>
           </div>
           <dl class="mt-5 grid gap-x-6 gap-y-3 text-[15px] leading-7 md:grid-cols-[120px,1fr]">
             <dt class="font-semibold text-[#2e7ca7]">点评榜单</dt><dd>门头沟区咖啡热门榜 · 第1名</dd>
