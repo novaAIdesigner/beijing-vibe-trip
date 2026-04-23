@@ -4,86 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>怀柔书画山小环线 + 桃花 / 追火车</title>
-  <style>
-:root {
-  --bg: #f6f7fb;
-  --card: #ffffff;
-  --line: #dbe2ea;
-  --ink: #152033;
-  --muted: #5a6475;
-  --accent: #3658d4;
-  --accent-soft: #e9eeff;
-  --warm: #92400e;
-  --warm-soft: #fff7ed;
-  --green: #0f766e;
-  --green-soft: #e8fffb;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: linear-gradient(180deg, #f8fafc 0%, #f3f4f8 100%);
-  color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-.page { max-width: 1120px; margin: 0 auto; padding: 28px 18px 52px; }
-.hero {
-  background: linear-gradient(135deg, #ffffff 0%, #eef3ff 100%);
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 24px 26px;
-  box-shadow: 0 18px 45px rgba(20, 32, 51, 0.06);
-}
-h1 { margin: 0 0 10px; font-size: 31px; line-height: 1.2; }
-.subtitle { color: var(--muted); margin: 0; font-size: 16px; line-height: 1.7; }
-.badges { margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap; }
-.badge {
-  display: inline-block; padding: 6px 10px; border-radius: 999px; background: var(--accent-soft);
-  color: var(--accent); font-size: 13px; font-weight: 600;
-}
-.badge.warm { background: var(--warm-soft); color: var(--warm); }
-.badge.green { background: var(--green-soft); color: var(--green); }
-.grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 18px; margin-top: 18px; }
-.panel {
-  background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 22px;
-  box-shadow: 0 14px 34px rgba(20, 32, 51, 0.05);
-}
-.panel h2 { margin: 0 0 12px; font-size: 22px; }
-.panel h3 { margin: 18px 0 8px; font-size: 17px; }
-.summary, p, li { font-size: 15px; line-height: 1.8; }
-table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 16px; }
-th, td { border: 1px solid var(--line); padding: 11px 12px; vertical-align: top; }
-th { background: #f8fafc; text-align: left; font-size: 14px; }
-td { font-size: 14px; line-height: 1.7; }
-.small-table td:first-child, .small-table th:first-child { width: 150px; }
-.schedule-table td:nth-child(1) { width: 60px; text-align: center; }
-.schedule-table td:nth-child(3) { width: 96px; white-space: nowrap; }
-ul { margin: 8px 0 0; padding-left: 22px; }
-li { margin: 6px 0; }
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
-.gallery { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 14px; margin-top: 18px; }
-figure {
-  margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 20px; overflow: hidden;
-  box-shadow: 0 12px 28px rgba(20,32,51,.04);
-}
-figure img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: cover; background: #edf2f8; }
-figcaption { padding: 12px 14px; font-size: 13px; color: var(--muted); line-height: 1.7; }
-.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(295px, 1fr)); gap: 16px; margin-top: 20px; }
-.index-card {
-  display: block; overflow: hidden; border-radius: 22px; border: 1px solid var(--line); background: #fff; color: inherit;
-  box-shadow: 0 12px 28px rgba(20,32,51,.04);
-}
-.index-card img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; background: #edf2f8; }
-.index-card .inner { padding: 16px 16px 18px; }
-.index-card h3 { margin: 0 0 10px; font-size: 20px; }
-.index-meta { color: var(--muted); font-size: 14px; line-height: 1.7; }
-.note { margin-top: 10px; font-size: 13px; color: var(--muted); }
-@media (max-width: 900px) {
-  .grid, .gallery { grid-template-columns: 1fr; }
-  .page { padding: 18px 12px 36px; }
-  h1 { font-size: 26px; }
-}
-</style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/shared.css" />
 </head>
 <body>
   <div class="page">

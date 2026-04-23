@@ -3,139 +3,102 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>weekend-trips</title>
-  <style>
-:root {
-  --bg: #f6f7fb;
-  --card: #ffffff;
-  --line: #dbe2ea;
-  --ink: #152033;
-  --muted: #5a6475;
-  --accent: #3658d4;
-  --accent-soft: #e9eeff;
-  --warm: #92400e;
-  --warm-soft: #fff7ed;
-  --green: #0f766e;
-  --green-soft: #e8fffb;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: linear-gradient(180deg, #f8fafc 0%, #f3f4f8 100%);
-  color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-.page { max-width: 1120px; margin: 0 auto; padding: 28px 18px 52px; }
-.hero {
-  background: linear-gradient(135deg, #ffffff 0%, #eef3ff 100%);
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 24px 26px;
-  box-shadow: 0 18px 45px rgba(20, 32, 51, 0.06);
-}
-h1 { margin: 0 0 10px; font-size: 31px; line-height: 1.2; }
-.subtitle { color: var(--muted); margin: 0; font-size: 16px; line-height: 1.7; }
-.badges { margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap; }
-.badge {
-  display: inline-block; padding: 6px 10px; border-radius: 999px; background: var(--accent-soft);
-  color: var(--accent); font-size: 13px; font-weight: 600;
-}
-.badge.warm { background: var(--warm-soft); color: var(--warm); }
-.badge.green { background: var(--green-soft); color: var(--green); }
-.grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 18px; margin-top: 18px; }
-.panel {
-  background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 22px;
-  box-shadow: 0 14px 34px rgba(20, 32, 51, 0.05);
-}
-.panel h2 { margin: 0 0 12px; font-size: 22px; }
-.panel h3 { margin: 18px 0 8px; font-size: 17px; }
-.summary, p, li { font-size: 15px; line-height: 1.8; }
-table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 16px; }
-th, td { border: 1px solid var(--line); padding: 11px 12px; vertical-align: top; }
-th { background: #f8fafc; text-align: left; font-size: 14px; }
-td { font-size: 14px; line-height: 1.7; }
-.small-table td:first-child, .small-table th:first-child { width: 150px; }
-.schedule-table td:nth-child(1) { width: 60px; text-align: center; }
-.schedule-table td:nth-child(3) { width: 96px; white-space: nowrap; }
-ul { margin: 8px 0 0; padding-left: 22px; }
-li { margin: 6px 0; }
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
-.gallery { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 14px; margin-top: 18px; }
-figure {
-  margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 20px; overflow: hidden;
-  box-shadow: 0 12px 28px rgba(20,32,51,.04);
-}
-figure img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: cover; background: #edf2f8; }
-figcaption { padding: 12px 14px; font-size: 13px; color: var(--muted); line-height: 1.7; }
-.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(295px, 1fr)); gap: 16px; margin-top: 20px; }
-.index-card {
-  display: block; overflow: hidden; border-radius: 22px; border: 1px solid var(--line); background: #fff; color: inherit;
-  box-shadow: 0 12px 28px rgba(20,32,51,.04);
-}
-.index-card img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; background: #edf2f8; }
-.index-card .inner { padding: 16px 16px 18px; }
-.index-card h3 { margin: 0 0 10px; font-size: 20px; }
-.index-meta { color: var(--muted); font-size: 14px; line-height: 1.7; }
-.note { margin-top: 10px; font-size: 13px; color: var(--muted); }
-@media (max-width: 900px) {
-  .grid, .gallery { grid-template-columns: 1fr; }
-  .page { padding: 18px 12px 36px; }
-  h1 { font-size: 26px; }
-}
-</style>
+  <title>北京周末出行 · vibe trip</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/shared.css" />
 </head>
 <body>
   <div class="page">
     <section class="hero">
-      <h1>weekend-trips</h1>
-      <p class="subtitle">主目录已改为 <code>/home/qiushuo/weekend-trips</code>。目录层级压扁为“根目录 + 方案 HTML”，每条路线都带图片、目的地/活动介绍，引用链接直接嵌入正文，不再单独放底部索引。</p>
-      <div class="badges"><span class="badge">春季周末</span><span class="badge">徒步 + 休闲</span><span class="badge green">图片版</span><span class="badge warm">少层级</span></div>
+      <h1>北京周末出行 · vibe trip</h1>
+      <p class="subtitle">五道口出发 · 自驾周末线 · 小红书找氛围 / 六只脚核定量 / 点评 &amp; 携程 &amp; Bing 交叉验证 · 最终落地为可执行行程。</p>
+      <div class="badges">
+        <span class="badge">春季周末</span>
+        <span class="badge">徒步 + 休闲</span>
+        <span class="badge green">图片版</span>
+        <span class="badge warm">五道口出发</span>
+      </div>
     </section>
-    <section class="index-grid"><a class="index-card" href="./pages/春季-昌平-6.5h-57km-山野烤房咖啡-6.9km425m.html">
-      <img src="https://sns-webpic-qc.xhscdn.com/202604221014/6e52ee27ec38a2fb070d9f74fba31d51/1040g00831up83obcig005nlalt3g8l4am9qjaj0!nc_n_webp_prv_1" alt="昌平大黑山环线 + 黑山烤房 / 山脚咖啡" loading="lazy" referrerpolicy="no-referrer" />
-      <div class="inner">
-        <div class="badges"><span class="badge">北京·昌平</span><span class="badge">6.5h</span><span class="badge">57km</span><span class="badge">6.9km425m</span></div>
-        <h3>昌平大黑山环线 + 黑山烤房 / 山脚咖啡</h3>
-        <div class="index-meta">主题：山野烤房咖啡<br/>亮点：体力段和休闲段衔接自然，适合把“爬山”变成一整天的好玩安排。<br/>点评快照：黑山烤房 4.5 / 3867条 / ￥160，延寿咖啡 4.4 / 692条 / ￥46。<br/>小红书参考：2 条帖子，能直观看到“上山 + 吃肉 / 咖啡恢复”的完整节奏。</div>
-      </div>
-    </a><a class="index-card" href="./pages/春季-怀柔-6.0h-47km-桃花追火车-5.7km310m.html">
-      <img src="https://sns-webpic-qc.xhscdn.com/202604221014/92ab5b9dd58b309988cbd86c4329830c/spectrum/1040g0k031ufub8vuis005nfnchj09ejfh55ih50!nc_n_webp_prv_1" alt="怀柔书画山小环线 + 桃花 / 追火车" loading="lazy" referrerpolicy="no-referrer" />
-      <div class="inner">
-        <div class="badges"><span class="badge">北京·怀柔</span><span class="badge">6.0h</span><span class="badge">47km</span><span class="badge">5.7km310m</span></div>
-        <h3>怀柔书画山小环线 + 桃花 / 追火车</h3>
-        <div class="index-meta">主题：桃花追火车<br/>亮点：路线本身不累，桃花和火车机位让它特别适合春天的松弛感周末。<br/>点评快照：本线暂不强绑固定商户，建议按当天状态再补怀柔高分餐厅 / 咖啡。<br/>小红书参考：2 条帖子，重点展示桃花、火车机位和亲子环穿氛围。</div>
-      </div>
-    </a><a class="index-card" href="./pages/春季-门头沟-8.0h-37km-洞穴咖啡收尾-11.4km688m.html">
-      <img src="https://sns-webpic-qc.xhscdn.com/202604221014/c3315a2cceceadf6942564af630ecddd/notes_pre_post/1040g3k831rv6j4fgis8g5q8pjhhdtkangmua4oo!nc_n_webp_prv_1" alt="潭柘寺天坑小环线 + 洞力场 / 阳光房咖啡" loading="lazy" referrerpolicy="no-referrer" />
-      <div class="inner">
-        <div class="badges"><span class="badge">北京·门头沟</span><span class="badge">8.0h</span><span class="badge">37km</span><span class="badge">11.4km688m</span></div>
-        <h3>潭柘寺天坑小环线 + 洞力场 / 阳光房咖啡</h3>
-        <div class="index-meta">主题：洞穴咖啡收尾<br/>亮点：强度最完整，也最适合做“认真运动 + 精致恢复”对照体验。<br/>点评快照：gaga 4.6 / 284条 / ￥111；墨托 4.2 / 4956条 / ￥93。<br/>小红书参考：2 条帖子，能快速理解“天坑山线 + 洞穴咖啡收尾”的反差感。</div>
-      </div>
-    </a><a class="index-card" href="./pages/春季-昌平-5.0h-44km-蟒山水库观景-5.5km137m.html">
-      <img src="https://sns-webpic-qc.xhscdn.com/202604221720/516167e955e5f0d813b451fccc89ae40/1040g00831u0od0oh7e6g5nu4mj40bgi9l4alca0!nc_n_webp_mw_1" alt="蟒山 + 十三陵水库观景" loading="lazy" referrerpolicy="no-referrer" />
-      <div class="inner">
-        <div class="badges"><span class="badge">北京·昌平</span><span class="badge">5.0h</span><span class="badge">44km</span><span class="badge">5.5km137m</span></div>
-        <h3>蟒山 + 十三陵水库观景</h3>
-        <div class="index-meta">主题：轻松上山、看水库和长廊的一条低压力恢复线<br/>亮点：爬升最低（137m），适合不想累也想出片的周末；水库 + 长廊出片稳定。<br/>强度：5.5km / 137m，明显低于其他几条，适合亲子 / 轻出行。<br/>小红书参考：水库观景 + 蟒山长廊相关帖，看整体氛围。</div>
-      </div>
-    </a><a class="index-card" href="./pages/春季-昌平-6.5h-39km-白虎涧后院咖啡-7.4km412m.html">
-      <img src="https://sns-webpic-qc.xhscdn.com/202604221720/0ed90e591643a49e613e20a333252fcb/notes_pre_post/1040g3k831s5718gclk0g49468pa18tinve68clo!nc_n_webp_mw_1" alt="白虎涧 + 后院咖啡" loading="lazy" referrerpolicy="no-referrer" />
-      <div class="inner">
-        <div class="badges"><span class="badge">北京·昌平</span><span class="badge">6.5h</span><span class="badge">39km</span><span class="badge">7.4km412m</span></div>
-        <h3>白虎涧 + 后院咖啡</h3>
-        <div class="index-meta">主题：先走北京后花园山线，再到山脚庭院咖啡放松<br/>亮点：7.4km / 412m 的中等强度山线 + 山脚庭院咖啡，城市最近的一条。<br/>定位：车程最短（39km）的那条，适合懒得出远门但仍想走一圈的周末。<br/>小红书参考：白虎涧 + 后院咖啡的组合帖，看节奏和出片氛围。</div>
-      </div>
-    </a><a class="index-card" href="./pages/春季-海淀-7.0h-29km-凤凰岭素虎收尾-7.1km684m.html">
-      <img src="https://sns-webpic-qc.xhscdn.com/202604221720/b8f4ab28e2b285ae2111b6b85da946c9/notes_pre_post/1040g3k031lh3otmi5e5g5p8s3pioshmk3rvogr8!nc_n_webp_mw_1" alt="凤凰岭 + 素虎 / 山脚恢复" loading="lazy" referrerpolicy="no-referrer" />
-      <div class="inner">
-        <div class="badges"><span class="badge">北京·海淀</span><span class="badge">7.0h</span><span class="badge">29km</span><span class="badge">7.1km684m</span></div>
-        <h3>凤凰岭 + 素虎 / 山脚恢复</h3>
-        <div class="index-meta">主题：海淀西山更有爬升感的一天，收尾用素食 / 山脚轻恢复拉长节奏<br/>亮点：爬升 684m，体感最接近“认真爬一次山”；车程最短（29km），适合当天往返。<br/>定位：想要爬升练腿、又不想开远门时的首选；素虎收尾把强度收得住。<br/>小红书参考：凤凰岭山线 + 素虎 / 山脚咖啡组合帖，看强度和恢复体验。</div>
-      </div>
-    </a></section>
-    <p class="note">旧目录 <code>/home/qiushuo/weekend</code> 将被移除，后续统一维护在 <code>/home/qiushuo/weekend-trips</code>。当前索引页已补路线级点评快照；详细的招牌菜、团购、菜单入口、正负评价与图片，进入各路线页可继续看。</p>
+
+    <section class="index-masonry">
+
+      <a class="index-card" href="./pages/春季-昌平-6.5h-57km-山野烤房咖啡-6.9km425m.html">
+        <img src="https://sns-webpic-qc.xhscdn.com/202604221014/6e52ee27ec38a2fb070d9f74fba31d51/1040g00831up83obcig005nlalt3g8l4am9qjaj0!nc_n_webp_prv_1" alt="昌平大黑山环线 + 黑山烤房 / 山脚咖啡" loading="lazy" referrerpolicy="no-referrer" />
+        <div class="inner">
+          <div class="badges"><span class="badge">昌平</span><span class="badge">6.5h</span><span class="badge">57km</span><span class="badge">6.9km / 425m</span></div>
+          <h3>昌平大黑山环线 + 黑山烤房 / 山脚咖啡</h3>
+          <div class="index-meta">体力段和休闲段衔接自然，适合把“爬山”变成一整天的好玩安排。</div>
+          <div class="mini-dp">
+            <div class="mini-dp-row"><span class="name">黑山烤房</span><span class="star">★ 4.5</span><span class="meta">3867条 · ￥160</span></div>
+            <div class="mini-dp-row"><span class="name">延寿咖啡</span><span class="star">★ 4.4</span><span class="meta">692条 · ￥46</span></div>
+          </div>
+        </div>
+      </a>
+
+      <a class="index-card" href="./pages/春季-怀柔-6.0h-47km-桃花追火车-5.7km310m.html">
+        <img src="https://sns-webpic-qc.xhscdn.com/202604221014/92ab5b9dd58b309988cbd86c4329830c/spectrum/1040g0k031ufub8vuis005nfnchj09ejfh55ih50!nc_n_webp_prv_1" alt="怀柔书画山小环线 + 桃花 / 追火车" loading="lazy" referrerpolicy="no-referrer" />
+        <div class="inner">
+          <div class="badges"><span class="badge">怀柔</span><span class="badge">6.0h</span><span class="badge">47km</span><span class="badge">5.7km / 310m</span></div>
+          <h3>怀柔书画山小环线 + 桃花 / 追火车</h3>
+          <div class="index-meta">路线不累，桃花和火车机位让它特别适合春天的松弛感周末。</div>
+          <div class="mini-dp">
+            <div class="mini-dp-empty">点评：未绑定固定商户，按当天状态就地选。</div>
+          </div>
+        </div>
+      </a>
+
+      <a class="index-card" href="./pages/春季-门头沟-8.0h-37km-洞穴咖啡收尾-11.4km688m.html">
+        <img src="https://sns-webpic-qc.xhscdn.com/202604221014/c3315a2cceceadf6942564af630ecddd/notes_pre_post/1040g3k831rv6j4fgis8g5q8pjhhdtkangmua4oo!nc_n_webp_prv_1" alt="潭柘寺天坑小环线 + 洞力场 / 阳光房咖啡" loading="lazy" referrerpolicy="no-referrer" />
+        <div class="inner">
+          <div class="badges"><span class="badge">门头沟</span><span class="badge">8.0h</span><span class="badge">37km</span><span class="badge">11.4km / 688m</span></div>
+          <h3>潭柘寺天坑小环线 + 洞力场 / 阳光房咖啡</h3>
+          <div class="index-meta">强度最完整，最适合“认真运动 + 精致恢复”对照体验。</div>
+          <div class="mini-dp">
+            <div class="mini-dp-row"><span class="name">gaga</span><span class="star">★ 4.6</span><span class="meta">284条 · ￥111</span></div>
+            <div class="mini-dp-row"><span class="name">墨托</span><span class="star">★ 4.2</span><span class="meta">4956条 · ￥93</span></div>
+          </div>
+        </div>
+      </a>
+
+      <a class="index-card" href="./pages/春季-昌平-5.0h-44km-蟒山水库观景-5.5km137m.html">
+        <img src="https://sns-webpic-qc.xhscdn.com/202604221720/516167e955e5f0d813b451fccc89ae40/1040g00831u0od0oh7e6g5nu4mj40bgi9l4alca0!nc_n_webp_mw_1" alt="蟒山 + 十三陵水库观景" loading="lazy" referrerpolicy="no-referrer" />
+        <div class="inner">
+          <div class="badges"><span class="badge">昌平</span><span class="badge">5.0h</span><span class="badge">44km</span><span class="badge">5.5km / 137m</span></div>
+          <h3>蟒山 + 十三陵水库观景</h3>
+          <div class="index-meta">爬升最低（137m），水库 + 长廊出片稳定，带娃也能走。</div>
+          <div class="mini-dp">
+            <div class="mini-dp-empty">点评：以景区为主，餐饮按当天状态就地挑。</div>
+          </div>
+        </div>
+      </a>
+
+      <a class="index-card" href="./pages/春季-昌平-6.5h-39km-白虎涧后院咖啡-7.4km412m.html">
+        <img src="https://sns-webpic-qc.xhscdn.com/202604221720/0ed90e591643a49e613e20a333252fcb/notes_pre_post/1040g3k831s5718gclk0g49468pa18tinve68clo!nc_n_webp_mw_1" alt="白虎涧 + 后院咖啡" loading="lazy" referrerpolicy="no-referrer" />
+        <div class="inner">
+          <div class="badges"><span class="badge">昌平</span><span class="badge">6.5h</span><span class="badge">39km</span><span class="badge">7.4km / 412m</span></div>
+          <h3>白虎涧 + 后院咖啡</h3>
+          <div class="index-meta">中等强度山线 + 山脚庭院咖啡，车程最短的一条。</div>
+          <div class="mini-dp">
+            <div class="mini-dp-row"><span class="name">后院咖啡</span><span class="star">★ —</span><span class="meta">待补点评数据</span></div>
+          </div>
+        </div>
+      </a>
+
+      <a class="index-card" href="./pages/春季-海淀-7.0h-29km-凤凰岭素虎收尾-7.1km684m.html">
+        <img src="https://sns-webpic-qc.xhscdn.com/202604221720/b8f4ab28e2b285ae2111b6b85da946c9/notes_pre_post/1040g3k031lh3otmi5e5g5p8s3pioshmk3rvogr8!nc_n_webp_mw_1" alt="凤凰岭 + 素虎 / 山脚恢复" loading="lazy" referrerpolicy="no-referrer" />
+        <div class="inner">
+          <div class="badges"><span class="badge">海淀</span><span class="badge">7.0h</span><span class="badge">29km</span><span class="badge">7.1km / 684m</span></div>
+          <h3>凤凰岭 + 素虎 / 山脚恢复</h3>
+          <div class="index-meta">爬升 684m，体感最接近“认真爬一次山”；车程最短（29km）。</div>
+          <div class="mini-dp">
+            <div class="mini-dp-row"><span class="name">素虎（素食）</span><span class="star">★ —</span><span class="meta">待补点评数据</span></div>
+          </div>
+        </div>
+      </a>
+
+    </section>
+
+    <p class="note">图片按原图比例动态排布（CSS columns masonry），紧凑无留白；详细行程、招牌菜、菜单入口、正负评价进入各路线页继续看。</p>
   </div>
 </body>
 </html>
